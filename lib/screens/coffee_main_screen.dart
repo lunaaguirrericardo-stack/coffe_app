@@ -72,7 +72,7 @@ class _CoffeeMainScreenState extends State<CoffeeMainScreen>
 
             SizedBox(height: 120),
 
-            Container(
+            SizedBox(
               width: 350,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
@@ -95,7 +95,7 @@ class _CoffeeMainScreenState extends State<CoffeeMainScreen>
 
             SizedBox(height: 20),
 
-            Container(
+            SizedBox(
               width: 350,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(

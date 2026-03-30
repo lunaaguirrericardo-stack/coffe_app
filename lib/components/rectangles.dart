@@ -10,12 +10,5 @@ class Rectangles {
     ),
   );
 
-  static Widget rectangle2 = Container(
-    width: 150,
-    height: 30,
-    decoration: BoxDecoration(
-      color: Colors.brown[300],
-      borderRadius: BorderRadius.circular(10),
-    ),
-  );
+
 }
