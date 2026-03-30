@@ -47,7 +47,7 @@ class _PickUpScreenState extends State<PickUpScreen> {
               Padding(
                 padding: const EdgeInsets.only(left: 16.0, right: 16.0),
                 child: Text(
-                  'Check out our traditional coffee!',
+                  'Check out our traditional coffee menu!',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 32,
