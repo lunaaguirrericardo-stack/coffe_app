@@ -10,7 +10,11 @@ dependencies:
   flutter:
     sdk: flutter
 
+  #DISEÑOS
   carousel_slider: ^5.1.2  
+  flutter_custom_cards: ^0.2.1
+
+  #FUNCIONALIDAD
 
 dev_dependencies:
   flutter_test:
