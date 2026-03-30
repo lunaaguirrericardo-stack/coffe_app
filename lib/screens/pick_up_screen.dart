@@ -17,7 +17,7 @@ class _PickUpScreenState extends State<PickUpScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarStyles.coffeeAppBar(
-        title: 'Welcome Coffee Lover!',
+        title: 'Welcome Coffee Lovers!',
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 28, top: 4.0),
