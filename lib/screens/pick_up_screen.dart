@@ -2,6 +2,7 @@ import 'package:coffe_app/components/carousel.dart';
 import 'package:coffe_app/components/custom_cards.dart';
 import 'package:coffe_app/components/rectangles.dart';
 import 'package:coffe_app/core/widgets_styles.dart';
+import 'package:coffe_app/screens/Americano/americano.dart';
 import 'package:coffe_app/screens/Espresso/espresso.dart';
 import 'package:flutter/material.dart';
 
@@ -26,6 +27,7 @@ class _PickUpScreenState extends State<PickUpScreen> {
         ],
       ),
       backgroundColor: Colors.white,
+
       body: Container(
         padding: const EdgeInsets.all(16.0),
         child: SafeArea(
@@ -77,12 +79,20 @@ class _PickUpScreenState extends State<PickUpScreen> {
                         Navigator.push(context, MaterialPageRoute(builder: (context) => const EspressoScreen()));
                       },
                     ),
-                    CoffeeListItem(
-                      name: 'Americano',
-                      description:
-                          'Espresso diluido en agua caliente. Suave pero con cuerpo y sabor profundo.',
-                      price: '\$4.49',
+
+                    GestureDetector(
+                      child: CoffeeListItem(
+                        name: 'Americano',
+                        description:
+                            'Espresso diluido en agua caliente. Suave pero con cuerpo y sabor profundo.',
+                        price: '\$4.49',
+                      ),
+                      onTap:(){
+                         Navigator.push(context, MaterialPageRoute(builder: (context) => const AmericanoScreen()));
+                          }
                     ),
+                    
+
                     CoffeeListItem(
                       name: 'Cappuccino',
                       description:

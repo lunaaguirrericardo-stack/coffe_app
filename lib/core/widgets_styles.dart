@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+
+//Clases para estilos reutilizables en la aplicación, como AppBar y contenedores personalizados.
 class AppBarStyles {
 
   static AppBar coffeeAppBar({
@@ -28,3 +30,28 @@ class AppBarStyles {
     );
   }
 }
+
+//Clase para estilos de contenedores personalizados, como el contenedor de café con imagen y texto.
+
+class ContainerStyles {
+
+    static Container coffeeContainer({
+      required String title,
+      required Container container,
+      required Image coffeetype,
+    }) {
+      
+      return Container(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            coffeetype,
+
+            SizedBox(height: 20),
+
+            Text(title, style: TextStyle(fontSize: 18, color: Colors.brown[800], fontWeight: FontWeight.bold)),
+          ],
+        ),
+      );
+    }
+  }

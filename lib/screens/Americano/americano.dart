@@ -1,9 +1,9 @@
 import 'package:coffe_app/core/widgets_styles.dart';
 import 'package:flutter/material.dart';
 
-class EspressoScreen extends StatelessWidget {
+class AmericanoScreen extends StatelessWidget {
    
-  const EspressoScreen({super.key});
+  const AmericanoScreen({super.key});
   
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class EspressoScreen extends StatelessWidget {
             height: 200,
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/coffee_2.png'),
+                image: AssetImage('assets/coffee_4.png'),
                 fit: BoxFit.cover,
               ),
             ),
