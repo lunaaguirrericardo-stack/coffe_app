@@ -54,13 +54,13 @@ class _CoffeeMainScreenState extends State<CoffeeMainScreen>
                 animation: _rotationController,
                 builder: (context, child) {
                   // Aplicar una curva suave a la animación
-                  final curvedValue = Curves.easeInOut.transform(_rotationController.value);
-                  final smoothRotation = _previousRotation + (1.5708 * curvedValue);
-                  
-                  return Transform.rotate(
-                    angle: smoothRotation,
-                    child: child,
+                  final curvedValue = Curves.easeInOut.transform(
+                    _rotationController.value,
                   );
+                  final smoothRotation =
+                      _previousRotation + (1.5708 * curvedValue);
+
+                  return Transform.rotate(angle: smoothRotation, child: child);
                 },
                 child: ImageLogon(),
               ),
@@ -72,7 +72,7 @@ class _CoffeeMainScreenState extends State<CoffeeMainScreen>
 
             SizedBox(height: 120),
 
-            Container(
+            SizedBox(
               width: 350,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
@@ -80,14 +80,16 @@ class _CoffeeMainScreenState extends State<CoffeeMainScreen>
                   padding: const EdgeInsets.symmetric(
                     horizontal: 15,
                     vertical: 15,
-                  ),  
+                  ),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30),
                   ),
                 ),
                 onPressed: () => Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const DeliveryScreen()),
+                  MaterialPageRoute(
+                    builder: (context) => DeliveryScreen(),
+                  ),
                 ),
                 child: Text('Order to deliver', style: TextStyles2.buttonText),
               ),
@@ -95,7 +97,7 @@ class _CoffeeMainScreenState extends State<CoffeeMainScreen>
 
             SizedBox(height: 20),
 
-            Container(
+            SizedBox(
               width: 350,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(

@@ -74,7 +74,12 @@ class _PickUpScreenState extends State<PickUpScreen> {
                         price: '\$3.99',
                       ),
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => const EspressoScreen()));
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const EspressoScreen(),
+                          ),
+                        );
                       },
                     ),
                     CoffeeListItem(
@@ -117,4 +122,3 @@ class _PickUpScreenState extends State<PickUpScreen> {
     );
   }
 }
-
